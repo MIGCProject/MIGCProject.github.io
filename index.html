@@ -1,1 +1,312 @@
-<p>Hello</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MIGC: Multi-Instance Generation Controller for Text-to-Image Synthesis</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"> 
+		    MIGC: Multi-Instance Generation Controller for Text-to-Image Synthesis</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+		      <a href="https://scholar.google.com/citations?user=4C_OwWMAAAAJ&hl=en&oi=ao" target="_blank">Dewei Zhou</a>,</span>
+              <span class="author-block">
+                <a href="https://github.com/LeyRio" target="_blank">You Li</a>,</span>
+                <span class="author-block">
+                  <a href="https://flowerfan.site/" target="_blank">Fan Ma</a>,</span>
+                  <span class="author-block">
+	 		<a href="https://scholar.google.com/citations?user=8IE0CfwAAAAJ&hl=en&oi=ao" target="_blank">Zongxin Yang</a>,</span>
+                  <span class="author-block">
+			  <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=en" target="_blank">Yi Yang</a><sup>*</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+			  <span class="author-block">ReLER, CCAI, Zhejiang University
+				  <br>arXiv 2024</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2402.05408.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/limuloo/MIGC" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2402.05408.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop has-text-centered">
+    <div class="hero-body">
+        <img src="static/images/teaser.png" alt="MY ALT TEXT"/>
+	<p>Multi-Instance Generation Controller (MIGC) is a plug-and-play controller that enables stable diffusion with precise position control while ensuring the correctness of various attributes like color, shape, material, texture, and style in Multi-Instance Generation (MIG). It can also control the number of instances and improve interaction between instances.</p>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present a Multi-Instance Generation (MIG) task, simultaneously generating multiple instances with diverse controls in one image. Given a set of predefined coordinates and their corresponding descriptions, the task is to ensure that generated instances are accurately at the designated locations and that all instances' attributes adhere to their corresponding description. This broadens the scope of current research on Single-instance generation, elevating it to a more versatile and practical dimension. Inspired by the idea of divide and conquer, we introduce an innovative approach named Multi-Instance Generation Controller (MIGC) to address the challenges of the MIG task. Initially, we break down the MIG task into several subtasks, each involving the shading of a single instance. To ensure precise shading for each instance, we introduce an instance enhancement attention mechanism. Lastly, we aggregate all the shaded instances to provide the necessary information for accurately generating multiple instances in stable diffusion (SD). To evaluate how well generation models perform on the MIG task, we provide a COCO-MIG benchmark along with an evaluation pipeline. Extensive experiments were conducted on the proposed COCO-MIG benchmark, as well as on various commonly used benchmarks. The evaluation results illustrate the exceptional control capabilities of our model in terms of quantity, position, attribute, and interaction.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Gallery</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered" style="font-size: 24px; font-weight: bold;">
+        </h2>
+      </div>
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered" style="font-size: 24px; font-weight: bold;">
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig3.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered" style="font-size: 24px; font-weight: bold;">
+        </h2>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+      <h2 class="title is-3">Method</h2>
+          </div>
+        </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+        <img src="static/images/framework.png" alt="MY ALT TEXT"/>
+	<h2 class="content has-text-justified">
+		<p>
+            Our MIGC stands upon the pre-trained T2I diffusion model. Stable diffusion's UNet inputs text description and image features into the Cross-Attention layer to obtain the residual feature and then adds it to the image features to determine generated content, which is like a shading process (i.e., coloring with parallel pencil lines or a block of color). In this view, Multi-Instance Generation can be considered multi-instance shading on image features, and MIGC comprises three steps: (a) Divide MIG into single-instance shading subtasks. (b) Conquer single-instance shading with Enhancement Attention. (c) Combine shading results through Layout Attention and Shading Aggregation Controller.
+		</p>
+      </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">COCO-MIG Results</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig9.png" alt="MY ALT TEXT"/>
+      </div>
+      <div class="item">
+       <!-- Your image here -->
+       <img src="static/images/fig10.png" alt="MY ALT TEXT"/>
+     </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<hr class="dashed-line">
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">COCO-Position Results</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+        <img src="static/images/fig11.png" alt="MY ALT TEXT"/>
+        <img src="static/images/fig11_r.png" alt="MY ALT TEXT"/>
+	</h2>
+	</div>
+     </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="dashed-line">
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">DrawBench Results</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+        <img src="static/images/fig12.png" alt="MY ALT TEXT"/>
+        <img src="static/images/fig12_r.png" alt="MY ALT TEXT"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<hr class="dashed-line">
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+    @misc{zhou2024migc,
+      title={MIGC: Multi-Instance Generation Controller for Text-to-Image Synthesis}, 
+      author={Dewei Zhou and You Li and Fan Ma and Zongxin Yang and Yi Yang},
+      year={2024},
+      eprint={2402.05408},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+    }
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
